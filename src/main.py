@@ -51,8 +51,6 @@ def get_users():
         db.session.commit()
         return Response(status=200)
 
-#jl.dejaeger@gmail.com
-
 class User(db.Model): 
     id = db.Column(db.Integer, primary_key=True)
     firstname = db.Column(db.String(100))
